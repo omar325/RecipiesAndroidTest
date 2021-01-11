@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/recipesFragment"
-        android:name="com.example.recipiestest.RecipesFragment"
+        android:name="com.example.recipiestest.ui.RecipesFragment"
         android:label="RecipesFragment" >
         <action
             android:id="@+id/action_recipesFragment_to_recipeDetailFragment"
@@ -13,10 +13,10 @@
     </fragment>
     <fragment
         android:id="@+id/recipeDetailFragment"
-        android:name="com.example.recipiestest.detail.RecipeDetailFragment"
+        android:name="com.example.recipiestest.ui.detail.RecipeDetailFragment"
         android:label="RecipeDetailFragment" >
         <argument
             android:name="recipeId"
-            app:argType="integer" />
+            app:argType="string" />
     </fragment>
 </navigation>
